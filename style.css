@@ -1,0 +1,372 @@
+         * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Roboto Slab', serif;
+            background-color: white;
+}
+        nav {
+           display: flex;
+    width: -webkit-fill-available;
+    background-color: #00000099;
+    height: 7vh;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    top: .8vh;
+    z-index: 3;
+    border-radius: 4vh;
+    border: 3px solid black;
+        }
+        .left-nav {
+    color: transparent;
+    font-size: 1.6rem;
+    margin-left: 1vw;
+    padding: 1vh 3vw;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to left, #00ffd0, #07ff07, #01f3ff, lime);
+    background-size: 300%;
+    background-position: -200%;
+    animation-delay: .1s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 0.04, 1, 1.01);
+    animation-name: abinash;
+        }
+        @keyframes abinash {
+        	from { background-position:-200%; }
+        	to { background-position:200%; }
+        }
+        .right-nav {
+    margin-right: 1vw;
+    padding: 0vw 3vh;
+    font-size: 1.6rem;  
+ color: transparent;
+    background-image: linear-gradient(to left, cyan, yellow,#00ff2b);
+    -webkit-background-clip: text;
+    background-size: 200%;
+    background-position: 100%; 
+    animation-delay:.1s;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    animation-name:welcome;
+    animation-timing-function:ease;       
+        }
+        @keyframes welcome {
+        	from { background-position:100%; }
+        	to { background-position:-100%; }
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0rem 0.8rem;
+            padding: 3.6vh 0vw;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+      
+
+        }
+
+        #search-box {
+            padding: 3vw 3vh;
+            border-color: none;
+        }
+        .introduction {
+           padding: 4vh 5vw;
+            text-align: center;
+            color: black;
+            line-height: 4vh;
+            background-image:radial-gradient(gray , white 75%);            
+            }
+            span {
+            color:red;
+            font-weight:bold;            
+            }
+        .img1 {
+            
+            height: 34vh;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section1 {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            background-image: linear-gradient(white, gray, white);
+        }
+        .grid {
+        margin: 5vh 1vw;
+    height: 8vh;
+    text-align: center;
+    background-color: #242424;
+    color: white;
+    border: 3px solid white;
+    border-radius: 45px 75px;
+    padding-top: 4vh;
+        }
+        .section2 {
+        display:grid;
+        grid-template-columns:auto auto auto auto;
+        background-image:radial-gradient(grey, white 75%);  
+        }
+        .project {
+        background-color: #3c3c3c;
+    border: 2px solid black;
+    border-radius: 34px 23px;
+    color: white;
+    height: 7vh;
+    margin: 1vh 1vw;
+    text-align: center;
+    padding-top: 3vh;   
+        }
+        h1 {
+        color: black;
+        margin-left: 2vw;
+        border-left: 4px solid black;
+        padding-left: 1rem;
+        margin-top: 2vh;
+        margin-bottom: 4vh;
+        }
+        a {
+        text-decoration: none;
+    color: transparent;
+    background-image: linear-gradient(to left, red, yellow,#00ff2b);
+    -webkit-background-clip: text;
+    background-size: 200%;
+    background-position: 100%; 
+    animation-delay:.1s;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    animation-name:a;
+    animation-timing-function:ease;       
+        }
+        @keyframes a {
+        	from { background-position:100%; }
+        	to { background-position:-100%; }
+        }
+        .copyright {
+        color:black;
+        margin:3vw 3vh;   text-align: center;      
+        }
+        nav ul li :hover{
+        border:3px solid white;
+        border-radius:3px;
+        background-color:white;
+        color:black;        
+        }
+         .container3 {
+    height: 270px;
+    width: 350px;
+    margin: 12vh auto 5vh auto; 
+    }
+    .img4 {
+        height: 300px;
+    }
+    .pupil1 {
+   height: 11px;
+    width: 11px;
+    border-radius: 100%;
+    position: relative;
+    top: -174px;
+    left: 188px;
+    background-image: radial-gradient(circle, #8d5555, red, #2e0909);
+    animation-name: gradient-eye;
+    animation-delay: 1s;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;  
+    }
+    .shari1{
+    height: 11px;
+    position: relative;
+    top: -191px;
+    left: 188px;
+    animation-name: pupil;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;  
+    }
+    .pupil2 {
+   height: 11px;
+    width: 11px;
+    border-radius: 100%;
+    position: relative;
+   top: -211px;
+    left: 119px;
+    background-image: radial-gradient(circle, #8d5555, red, #2e0909);
+    animation-name: gradient-eye;
+    animation-delay: 1s;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;   
+    }
+    .shari2{
+    height: 11px;
+    position: relative;
+    top: -228px;
+    left: 119px;
+    animation-name: pupil;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    }
+   @keyframes pupil {
+    	from { transform:rotate(0deg); }
+    	to { transform:rotate(360deg); }
+    }
+    @keyframes gradient-eye {
+    	from { background-image: radial-gradient(circle, #8d5555, red, #2e0909); }
+    	to { background-image: radial-gradient(circle, #2e0909, red, #8d5555);}
+    }
+        
+        
+        
+        @media screen and (max-width:600px)and (min-width: 300px){
+        .section1 {
+        display: flex;
+        flex-direction:column;}  
+        .grid {
+        margin: 1vh 5vw;
+    height: 5vh;
+    padding-top: 3vh;       
+        }   
+        .section2 {
+         grid-template-columns:auto auto auto;        
+        }
+        nav {
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-content:center;
+        height: 6vh;    
+        }   
+        .left-nav {
+        margin-left:0px;
+        border-radius:0px;
+        border:0px;
+        font-size: 1.4rem;
+        padding: 1vh;        
+        }
+        .right-nav {
+        margin-right:0px;
+        border-top: 1px solid white; 
+        display:none;       
+        }
+        nav ul li {
+        list-style: none;
+        margin: 0rem 0.8rem;
+        padding: 0.6vh 0vw;
+        }
+        .img-logo {
+        height:auto;
+        width:40%;        
+        }
+        .about {
+        text-align:center;        
+        }
+        .introduction {
+        line-height:3vh;        
+        }
+       /* nav ul {
+        display: none;
+        }*/
+        } 
+    @media screen and (max-width:299px){
+           .section1 {
+        display: flex;
+        flex-direction:column;}  
+        .grid {
+        margin: 1vh 5vw;
+    height: 5vh;
+    padding-top: 3vh;       
+        }   
+        .section2 {
+         grid-template-columns:auto auto auto;        
+        }
+        nav {
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-content:center;
+        height: 6vh;    
+        }   
+        .left-nav {
+        margin-left:0px;
+        border-radius:0px;
+        border:0px;
+        font-size: 1.4rem;
+        padding: 0vh;        
+        }
+        .right-nav {
+        margin-right:0px;
+        border-top: 1px solid white; 
+        display:none;       
+        }
+        nav ul li {
+        list-style: none;
+        margin: 0rem 0.8rem;
+        padding: 0.6vh 0vw;
+        }
+        .img-logo {
+        height:auto;
+        width:40%;        
+        }
+        .about {
+        text-align:center;        
+        }
+        .introduction {
+        line-height:3vh;        
+        }
+        .img4 {
+    height: 42vh;
+}
+.pupil1 {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    position: relative;
+    top: -160px;
+    left: 172px;
+    background-image: radial-gradient(circle, #8d5555, red, #2e0909);
+}
+.shari1 {
+    height: 10px;
+    position: relative;
+    top: -177px;
+    left: 172px;
+}
+.pupil2 {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    position: relative;
+    top: -195px;
+    left: 108px;
+    background-image: radial-gradient(circle, #8d5555, red, #2e0909);}
+.shari2 {
+    height: 10px;
+    position: relative;
+    top: -212px;
+    left: 108px;}
+    .project {
+    background-color: #3c3c3c;
+    border: 2px solid black;
+    border-radius: 34px 23px;
+    color: white;
+    height: 7vh;
+    margin: 1vh 1vw;
+    text-align: center;
+    padding-top: 2vh;}
+
+.container3 {
+    height: 40vh;
+    width: auto;
+    margin: 12vh auto 5vh auto;
+}
+
+    }
