@@ -33,7 +33,7 @@ animation-name: name;
     margin-left: 1vw;
     padding: 1vh 3vw;
     -webkit-background-clip: text;
-    background-image: linear-gradient(to left, #00ffd0, #07ff07, #01f3ff, lime);
+    background-image: linear-gradient(to left, #00ffd0, #ff07e0, #ff0101, #0043ff);
     background-size: 300%;
     background-position: -200%;
     animation-delay: .1s;
