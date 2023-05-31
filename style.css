@@ -191,7 +191,7 @@ background-color: cyan;
 }
 .link1 {
     color: transparent;
-     background-image:linear-gradient(to top left,#ff0000,#0014ff,#ff0000,#00ffc4);
+     background-image:linear-gradient(to left,#ff0000,#0014ff,#ff0000,#00ffc4);
     -webkit-background-clip: text;
     background-size: 200%;
     background-position: -100%;
