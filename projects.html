@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <title>My Project's</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      border: 0;
+      list-style: none;
+      text-decoration: none;
+    }
+
+    body {
+      background-color: aliceblue;
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: 'Roboto Slab', serif;
+    }
+
+    nav {
+      background-color: #37384e;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 9vh;
+      box-shadow: 0px 0px 20px 2px black;
+      animation-delay: .1s;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-name: nav;
+      animation-direction: alternate;
+    }
+
+    @keyframes nav {
+      from {
+        box-shadow: 0px 0px 20px 2px black;
+      }
+
+      to {
+        box-shadow: 0px 0px 40px 2px black;
+      }
+    }
+
+    .left-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0vh 2vw;
+    }
+
+    .left-nav-li {
+      color: white;
+      margin: 0vh .4vw;
+    }
+
+    .link0:hover {
+      background-image: linear-gradient(to bottom left, #ff00e0, #9600ff);
+      /* color: black; */
+      transition-duration: .1s;
+      transition-timing-function: step-end;
+      transition-delay: .1s;
+
+    }
+
+    .link0 {
+      color: white;
+      font-size: 2.2vh;
+      font-weight: bold;
+      padding: 3vh 1vw;
+      target-new
+    }
+
+    .heading {
+      margin: 12vh 2vw 0vh 2vw;
+      border-left: 6px solid red;
+      padding: 1vw;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: transparent;
+      background-image: linear-gradient(to top left, #ff00f7, red, #ff00e0, #ff003b);
+      -webkit-background-clip: text;
+      background-size: 400%;
+      background-position: -100%;
+      animation-name: heading;
+      animation-duration: 2s;
+      animation-delay: .1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(0.52, 0.52, 0.53, 0.51);
+    }
+
+    @keyframes heading {
+      from {
+        background-position: -200%;
+      }
+
+      to {
+        background-position: 200%;
+      }
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      margin: 6vh 2vw 2vh 2vw;
+      grid-column-gap: 3vw;
+      grid-row-gap: 4vh;
+    }
+
+    .project {
+      height: 14vh;
+      width: auto;
+      background-color: rgb(0, 0, 0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 23px;
+      border: 2px solid red;
+      box-shadow: 0px 0px 25px #e22b2b8c, 0px 0px 25px #ff00557d;
+      animation-name: project;
+      animation-iteration-count: infinite;
+      animation-delay: .2s;
+      animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+      animation-duration: 2s;
+    }
+
+    @keyframes animate {
+      0% {
+        filter: hue-rotate(0deg);
+      }
+
+      100% {
+        filter: hue-rotate(360deg);
+      }
+    }
+
+    .pro {
+      font-size: 1.4rem;
+      color: transparent;
+      background-image: linear-gradient(to top left, #ff0000, #001fff, #ff00e0, #ff0000);
+      -webkit-background-clip: text;
+      background-size: 400%;
+      background-position: -100%;
+      animation-name: heading;
+      animation-duration: 2s;
+      animation-delay: .1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(0.52, 0.52, 0.53, 0.51);
+      text-align: center;
+    }
+
+    @keyframes heading {
+      from {
+        background-position: -200%;
+      }
+
+      to {
+        background-position: 200%;
+      }
+    }
+
+
+
+
+    .project_finished {
+      height: 14vh;
+      width: auto;
+      background-color: ghostwhite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 23px;
+      border: 2px solid cornflowerblue;
+      box-shadow: 0px 0px 25px #00ffe78c, 0px 0px 25px #00ff2b7d;
+      animation-name: project;
+      animation-iteration-count: infinite;
+      animation-delay: .2s;
+      animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+      animation-duration: 2s;
+    }
+
+    @keyframes animate {
+      0% {
+        filter: hue-rotate(0deg);
+      }
+
+      100% {
+        filter: hue-rotate(360deg);
+      }
+    }
+
+    .pro_finished {
+      font-size: 1.4rem;
+      color: transparent;
+      background-image:linear-gradient(to top left, #00ff03, #00fff3, #00adff, #0066ff);
+      -webkit-background-clip: text;
+      background-size: 400%;
+      background-position: -100%;
+      animation-name: heading;
+      animation-duration: 2s;
+      animation-delay: .1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(0.52, 0.52, 0.53, 0.51);
+      text-align: center;
+    }
+
+    @keyframes heading {
+      from {
+        background-position: -200%;
+      }
+
+      to {
+        background-position: 200%;
+      }
+    }
+
+
+
+
+
+    @media screen and (max-width:800px) {
+      .grid {
+        display: grid;
+        grid-template-columns: auto auto  auto;
+      }
+    }
+    @media screen and (max-width:600px) {
+      .grid {
+        display: grid;
+        grid-template-columns: auto auto ;
+      }
+    }
+    @media screen and (max-width:450px) {
+    header{
+      display: none;
+    }
+    .heading{
+      margin:4vh 2vw 0vh 2vw;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="left-nav">
+        <li class="left-nav-li"><a class="link0" href="index.html">HOME</a></li>
+        <li class="left-nav-li"><a class="link0" href="">ABOUT</a></li>
+        <li class="left-nav-li"><a class="link0" href="">CONTACT</a></li>
+        <li class="left-nav-li"><a class="link0" href="projects.html">PROJECTS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="heading">
+      <h1>These are all my new and old project's</h1>
+    </div>
+    <div class="grid">
+      <div class="project_finished">
+        <a class="pro_finished" href="project_1.html">Portfolio design 1</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+      <div class="project">
+        <a class="pro" href="">Coming Soon</a>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
